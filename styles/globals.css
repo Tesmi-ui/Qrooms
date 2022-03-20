@@ -15,10 +15,3 @@ a {
 * {
   box-sizing: border-box;
 }
-.siteinfo{
-    box-sizing: border-box;
-    text-decoration-color: lightblue;
-    height: fit-content;
-    width: fit-content;
-
-}

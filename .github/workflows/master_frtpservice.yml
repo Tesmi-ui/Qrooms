@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'frtpservice'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2B63DB5D60DF45288A0AD371BB27EDC5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77ECD9B5A61648579C2C20C5E9CFBCE6 }}
           package: .
