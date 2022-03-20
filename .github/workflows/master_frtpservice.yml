@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: ./
 
   deploy:
     runs-on: ubuntu-latest
@@ -55,5 +55,5 @@ jobs:
           app-name: 'frtpservice'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77ECD9B5A61648579C2C20C5E9CFBCE6 }}
-          package: .
- 
+          package : ./
+        
