@@ -21,7 +21,7 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
                 <Avatar size='sm' src={agency?.logo?.url}></Avatar>
             </Flex>
             <Flex alignItems='center' p='1' justifyContent='space-between' w='250px' color='blue.400'>
-                {rooms}<FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
+                {rooms}<FaBed /> | {baths} <FaBath /> | {millify(area)} sqr.ft <BsGridFill />
             </Flex>
         </Box>
         <Box marginTop='2'>

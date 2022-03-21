@@ -1,5 +1,3 @@
-import '../styles/Home.module.css'
-import '../styles/globals.css'
 import Router from 'next/router';
 import Head from 'next/head';
 import NProgress from 'nprogress';
