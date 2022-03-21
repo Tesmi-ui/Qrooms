@@ -13,7 +13,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
     <Link href={`/property/${externalID}`} passHref>
         <Flex flexWrap='wrap' w='420px' p='5' paddingTop='0px' justifyContent='flex-start' cursor='pointer' >
             <Box>
-                <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260}/>
+                <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} alt={"banner"}/>
             </Box>
             <Box w='full'>
                 <Flex paddingTop='2' alignItems='center' justifyContent='space-between'>
@@ -22,12 +22,12 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
                         <Text fontWeight='bold' fontSize='lg'>AED {price}{rentFrequency && `/${rentFrequency}`}</Text>
                     </Flex>
                     <Box>
-                        <Avatar size='sm' src={agency?.logo?.url}></Avatar>
+                        <Avatar size='sm' src={agency?.logo?.url}> </Avatar>
                     </Box>
                 </Flex>
                 <Flex alignItems='center' p='1' justifyContent='space-between' w='250px' color='blue.400'>
                     {rooms}
-                    <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
+                    <FaBed /> | {baths} <FaBath /> | {millify(area)} sqr.ft <BsGridFill />
                 </Flex>
                 <Text fontSize='lg'>
                     {title.length > 30 ? title.substring(0, 30) + '...' : title}
