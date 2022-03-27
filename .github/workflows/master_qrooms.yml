@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '14.x'
 
       - name: npm install, build, and test
         run: |
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Qrooms'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_54D812289F98416AAFB1C0235E4CFEC1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_555881EA124248C9B4871BEE090560F6 }}
           package: .
